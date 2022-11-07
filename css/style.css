@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    padding: 3rem 0rem;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient( 150deg ,#e35252 30%, #a808d9);
+}
+.player{
+    width: 45%;
+    background-color: #F09AC6;
+    height: 80vh;
+    text-align: center;
+    padding: 5rem 0rem;
+}
+.player--active{
+    background: #fac5eb;
+}
+.player--0{
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.player--1{
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.name{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.score{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: rgb(205, 50, 50);;
+    margin-bottom: 9rem;
+}
+.current{
+    background-color: rgb(205, 50, 50);
+    width: 33%;
+    padding: 1rem 0rem;
+    margin: auto;
+    border-radius: 8px;
+}
+.current--label{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 231, 231);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.current-score{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 231, 231);
+    font-weight: 400;
+}
+.dice{
+    position: absolute;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    bottom: 350px;
+    left: 670px;
+
+}
+.btn--new{
+    position: absolute;
+    bottom: 459px;
+    left: 625px;
+}
+.btn--roll{
+    position: absolute;
+    bottom: 200px;
+    left: 600px;
+}
+.btn--hold{
+    position: absolute;
+    bottom: 120px;
+    left: 630px;
+}
+.btn{
+    border: none;
+    padding: 12px 12px;
+    background-color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+@media(max-width: 1024px){
+    .dice{
+        position: absolute;
+        bottom: 350px;
+        left: 500px;
+    
+    }
+    .btn--new{
+        position: absolute;
+        bottom: 459px;
+        left: 452px;
+    }
+    .btn--roll{
+        position: absolute;
+        bottom: 200px;
+        left: 441px;
+    }
+    .btn--hold{
+        position: absolute;
+        bottom: 120px;
+        left: 475px;
+    }
+}
+
+.player--winner{
+    background: rgb(23, 23, 23);
+    color: red;
+}
